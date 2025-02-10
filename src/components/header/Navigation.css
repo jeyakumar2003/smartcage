@@ -1,0 +1,48 @@
+/* Navbar Styling */
+.navigation {
+    background-color: #f8f9fa; /* Light background */
+    padding: 10px 20px;
+}
+
+/* Style for Nav Links */
+.nav .nav-link {
+    position: relative;
+    margin: 0 15px; /* Space between items */
+    padding-bottom: 5px; /* Space for underline */
+    color: #333; /* Default text color */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Underline effect */
+.nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #007bff; /* Underline color */
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+/* Hover effect */
+.nav .nav-link:hover {
+    color: #007bff;
+}
+
+.nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Active link styling */
+.nav .nav-link.active {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.nav .nav-link.active::after {
+    width: 100%;
+}

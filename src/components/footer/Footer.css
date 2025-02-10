@@ -1,0 +1,9 @@
+.copyright{
+    border-top: 1px solid white;
+}
+.socialmedia-icons {
+    display: flex;
+    gap: 22px;
+    padding-top: 20px;
+}
+
